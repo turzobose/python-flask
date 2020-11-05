@@ -3,10 +3,18 @@
 <html lang="en">
 	<head>
 		<title>
-			Hello!
+			Index!
 		</title>
 	</head>
 	<body>
-		Hello {{ name }} its your {{ num }} birthday!
+		<form action="/hello">
+			<input name="name" type="text">
+			<input type="submit">
+		</form>
+		{% if num > 45 %}
+				Hello {{ name }} its your {{ num }} birthday! You're old!
+		{% else %}
+				You're young ~~
+		{% endif %}
 	</body>
 </html>
