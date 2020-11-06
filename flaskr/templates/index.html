@@ -1,12 +1,6 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
 
-<html lang="en">
-	<head>
-		<title>
-			Index!
-		</title>
-	</head>
-	<body>
+{% block body %}
 		<form action="/hello">
 			<input name="name" type="text">
 			<input type="submit">
@@ -17,5 +11,4 @@
 				You're young ~~
 		{% endif %}
 		Enter your name!!
-	</body>
-</html>
+{% endblock %}
